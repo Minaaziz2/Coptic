@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Upsilon - Coptic Alphabet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="letter-page.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-button" onclick="goBack()">← Back to Alphabet</button>
+            <h1 class="letter-title">Ⲩ ⲩ</h1>
+            <h2 class="letter-name">Upsilon</h2>
+        </header>
+        
+        <main class="letter-content">
+            <div class="letter-display-large">
+                <div class="letter-shapes">
+                    <div class="shape-container">
+                        <h3>Capital Letter</h3>
+                        <div class="letter-big">Ⲩ</div>
+                        <div class="writing-guide">
+                            <p>Write like the letter 'Ⲩ'</p>
+                        </div>
+                    </div>
+                    <div class="shape-container">
+                        <h3>Small Letter</h3>
+                        <div class="letter-big">ⲩ</div>
+                        <div class="writing-guide">
+                            <p>Write like a small 'ⲩ'</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pronunciation-section">
+                <h3>🗣️ How to Say It</h3>
+                <div class="pronunciation-grid">
+                    <div class="pronunciation-item">
+                        <h4>In English</h4>
+                        <p class="pronunciation-text">"oo as in moon"</p>
+                        <button class="play-sound" onclick="playPronunciation('upsilon', 'en')">🔊 Listen</button>
+                    </div>
+                    <div class="pronunciation-item">
+                        <h4>In Arabic</h4>
+                        <p class="pronunciation-text">upsilon</p>
+                        <button class="play-sound" onclick="playPronunciation('upsilon', 'ar')">🔊 استمع</button>
+                    </div>
+                </div>
+                <div class="phonetic">
+                    <h4>Sound Symbol</h4>
+                    <p class="phonetic-symbol">[oo]</p>
+                </div>
+            </div>
+            
+            <div class="example-section">
+                <h3>📖 Example Word</h3>
+                <div class="example-word">
+                    <div class="word-coptic">ⲩⲓⲟⲥ</div>
+                    <div class="word-pronunciation">(uios)</div>
+                    <div class="word-meaning">
+                        <span class="meaning-en">💫 Son</span>
+                        <span class="meaning-ar">💫 ابن (ibn)</span>
+                    </div>
+                    <button class="play-sound big-play" onclick="playWord('upsilon')">🔊 Play Word</button>
+                </div>
+            </div>
+            
+            <div class="fun-facts">
+                <h3>🌟 Fun Facts</h3>
+                <div class="fact-cards">
+                    <div class="fact-card">
+                        <h4>📜 Origin</h4>
+                        <p>This letter comes from the <strong>Greek</strong> alphabet!</p>
+                    </div>
+                    <div class="fact-card">
+                        <h4>🔤 Position</h4>
+                        <p>Upsilon is the <strong>20th letter</strong> of the Coptic alphabet!</p>
+                    </div>
+                    <div class="fact-card">
+                        <h4>🎯 Special Feature</h4>
+                        <p>It looks similar to English letters!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="practice-section">
+                <h3>✏️ Practice Writing</h3>
+                <div class="practice-area">
+                    <p>Try tracing these letters with your finger!</p>
+                    <div class="trace-letters">
+                        <div class="trace-letter">Ⲩ</div>
+                        <div class="trace-letter">ⲩ</div>
+                        <div class="trace-letter">Ⲩ</div>
+                        <div class="trace-letter">ⲩ</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <nav class="letter-navigation">
+            <button class="nav-button prev" onclick="goToPrevLetter()">← Previous Letter</button>
+            <button class="nav-button next" onclick="goToNextLetter()">Next Letter →</button>
+        </nav>
+    </div>
+    
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="background song.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="letter-page.js"></script>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Gangia - Coptic Alphabet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="letter-page.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-button" onclick="goBack()">← Back to Alphabet</button>
+            <h1 class="letter-title">Ϫ ϫ</h1>
+            <h2 class="letter-name">Gangia</h2>
+        </header>
+        
+        <main class="letter-content">
+            <div class="letter-display-large">
+                <div class="letter-shapes">
+                    <div class="shape-container">
+                        <h3>Capital Letter</h3>
+                        <div class="letter-big">Ϫ</div>
+                        <div class="writing-guide">
+                            <p>Write like the letter 'special shape'</p>
+                        </div>
+                    </div>
+                    <div class="shape-container">
+                        <h3>Small Letter</h3>
+                        <div class="letter-big">ϫ</div>
+                        <div class="writing-guide">
+                            <p>Write like a small 'special shape'</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pronunciation-section">
+                <h3>🗣️ How to Say It</h3>
+                <div class="pronunciation-grid">
+                    <div class="pronunciation-item">
+                        <h4>In English</h4>
+                        <p class="pronunciation-text">"dj as in judge"</p>
+                        <button class="play-sound" onclick="playPronunciation('gangia', 'en')">🔊 Listen</button>
+                    </div>
+                    <div class="pronunciation-item">
+                        <h4>In Arabic</h4>
+                        <p class="pronunciation-text">jeem</p>
+                        <button class="play-sound" onclick="playPronunciation('gangia', 'ar')">🔊 استمع</button>
+                    </div>
+                </div>
+                <div class="phonetic">
+                    <h4>Sound Symbol</h4>
+                    <p class="phonetic-symbol">[dj]</p>
+                </div>
+            </div>
+            
+            <div class="example-section">
+                <h3>📖 Example Word</h3>
+                <div class="example-word">
+                    <div class="word-coptic">ϫⲓ</div>
+                    <div class="word-pronunciation">(ji)</div>
+                    <div class="word-meaning">
+                        <span class="meaning-en">💫 Say</span>
+                        <span class="meaning-ar">💫 قل (qul)</span>
+                    </div>
+                    <button class="play-sound big-play" onclick="playWord('gangia')">🔊 Play Word</button>
+                </div>
+            </div>
+            
+            <div class="fun-facts">
+                <h3>🌟 Fun Facts</h3>
+                <div class="fact-cards">
+                    <div class="fact-card">
+                        <h4>📜 Origin</h4>
+                        <p>This letter comes from the <strong>Demotic</strong> script!</p>
+                    </div>
+                    <div class="fact-card">
+                        <h4>🔤 Position</h4>
+                        <p>Gangia is the <strong>29th letter</strong> of the Coptic alphabet!</p>
+                    </div>
+                    <div class="fact-card">
+                        <h4>🎯 Special Feature</h4>
+                        <p>This is a unique Egyptian letter not found in Greek!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="practice-section">
+                <h3>✏️ Practice Writing</h3>
+                <div class="practice-area">
+                    <p>Try tracing these letters with your finger!</p>
+                    <div class="trace-letters">
+                        <div class="trace-letter">Ϫ</div>
+                        <div class="trace-letter">ϫ</div>
+                        <div class="trace-letter">Ϫ</div>
+                        <div class="trace-letter">ϫ</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <nav class="letter-navigation">
+            <button class="nav-button prev" onclick="goToPrevLetter()">← Previous Letter</button>
+            <button class="nav-button next" onclick="goToNextLetter()">Next Letter →</button>
+        </nav>
+    </div>
+    
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="background song.mp3" type="audio/mpeg">
+    </audio>
+    
+    <script src="letter-page.js"></script>
+</body>
+</html>

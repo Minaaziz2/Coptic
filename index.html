@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Coptic Alphabet - For Kids</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="main-title">🌟 Learn the Coptic Alphabet 🌟</h1>
+            <p class="subtitle">Click on any letter to learn more!</p>
+        </header>
+
+        <main>
+            <div class="alphabet-grid">
+                <!-- Greek-origin letters -->
+                <div class="letter-card" onclick="openLetter('alpha')">
+                    <div class="letter-display">Ⲁ ⲁ</div>
+                    <div class="letter-name">Alpha</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('beta')">
+                    <div class="letter-display">Ⲃ ⲃ</div>
+                    <div class="letter-name">Beta</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('gamma')">
+                    <div class="letter-display">Ⲅ ⲅ</div>
+                    <div class="letter-name">Gamma</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('delta')">
+                    <div class="letter-display">Ⲇ ⲇ</div>
+                    <div class="letter-name">Delta</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('epsilon')">
+                    <div class="letter-display">Ⲉ ⲉ</div>
+                    <div class="letter-name">Epsilon</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('zeta')">
+                    <div class="letter-display">Ⲍ ⲍ</div>
+                    <div class="letter-name">Zeta</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('eta')">
+                    <div class="letter-display">Ⲏ ⲏ</div>
+                    <div class="letter-name">Eta</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('theta')">
+                    <div class="letter-display">Ⲑ ⲑ</div>
+                    <div class="letter-name">Theta</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('iota')">
+                    <div class="letter-display">Ⲓ ⲓ</div>
+                    <div class="letter-name">Iota</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('kappa')">
+                    <div class="letter-display">Ⲕ ⲕ</div>
+                    <div class="letter-name">Kappa</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('lambda')">
+                    <div class="letter-display">Ⲗ ⲗ</div>
+                    <div class="letter-name">Lambda</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('mu')">
+                    <div class="letter-display">Ⲙ ⲙ</div>
+                    <div class="letter-name">Mu</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('nu')">
+                    <div class="letter-display">Ⲛ ⲛ</div>
+                    <div class="letter-name">Nu</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('xi')">
+                    <div class="letter-display">Ⲝ ⲝ</div>
+                    <div class="letter-name">Xi</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('omicron')">
+                    <div class="letter-display">Ⲟ ⲟ</div>
+                    <div class="letter-name">Omicron</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('pi')">
+                    <div class="letter-display">Ⲡ ⲡ</div>
+                    <div class="letter-name">Pi</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('rho')">
+                    <div class="letter-display">Ⲣ ⲣ</div>
+                    <div class="letter-name">Rho</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('sigma')">
+                    <div class="letter-display">Ⲥ ⲥ</div>
+                    <div class="letter-name">Sigma</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('tau')">
+                    <div class="letter-display">Ⲧ ⲧ</div>
+                    <div class="letter-name">Tau</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('upsilon')">
+                    <div class="letter-display">Ⲩ ⲩ</div>
+                    <div class="letter-name">Upsilon</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('phi')">
+                    <div class="letter-display">Ⲫ ⲫ</div>
+                    <div class="letter-name">Phi</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('chi')">
+                    <div class="letter-display">Ⲭ ⲭ</div>
+                    <div class="letter-name">Chi</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('psi')">
+                    <div class="letter-display">Ⲯ ⲯ</div>
+                    <div class="letter-name">Psi</div>
+                </div>
+                
+                <div class="letter-card" onclick="openLetter('omega')">
+                    <div class="letter-display">Ⲱ ⲱ</div>
+                    <div class="letter-name">Omega</div>
+                </div>
+                
+                <!-- Demotic-origin letters -->
+                <div class="letter-card demotic" onclick="openLetter('shai')">
+                    <div class="letter-display">Ⲳ ⲳ</div>
+                    <div class="letter-name">Shai</div>
+                </div>
+                
+                <div class="letter-card demotic" onclick="openLetter('fai')">
+                    <div class="letter-display">Ⲫⲁⲓ ⲫⲁⲓ</div>
+                    <div class="letter-name">Fai</div>
+                </div>
+                
+                <div class="letter-card demotic" onclick="openLetter('khei')">
+                    <div class="letter-display">Ⲭⲉⲓ ⲭⲉⲓ</div>
+                    <div class="letter-name">Khei</div>
+                </div>
+                
+                <div class="letter-card demotic" onclick="openLetter('hori')">
+                    <div class="letter-display">Ⲏⲟⲣⲓ ⲏⲟⲣⲓ</div>
+                    <div class="letter-name">Hori</div>
+                </div>
+                
+                <div class="letter-card demotic" onclick="openLetter('gangia')">
+                    <div class="letter-display">Ⳉ ⳉ</div>
+                    <div class="letter-name">Gangia</div>
+                </div>
+                
+                <div class="letter-card demotic" onclick="openLetter('shima')">
+                    <div class="letter-display">Ϣ ϣ</div>
+                    <div class="letter-name">Shima</div>
+                </div>
+                
+                <div class="letter-card demotic" onclick="openLetter('ti')">
+                    <div class="letter-display">Ϯ ϯ</div>
+                    <div class="letter-name">Ti</div>
+                </div>
+            </div>
+        </main>
+        
+        <footer>
+            <p>🎵 Enjoy learning with music! 🎵</p>
+        </footer>
+    </div>
+    
+    <!-- Background music -->
+    <audio id="backgroundMusic" loop autoplay>
+        <source src="background song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
