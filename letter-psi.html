@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Psi - Coptic Alphabet</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="letter-page.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <button class="back-button" onclick="goBack()">← Back to Alphabet</button>
+            <h1 class="letter-title">Ⲯ ⲯ</h1>
+            <h2 class="letter-name">Psi</h2>
+        </header>
+        
+        <main class="letter-content">
+            <div class="letter-display-large">
+                <div class="letter-shapes">
+                    <div class="shape-container">
+                        <h3>Capital Letter</h3>
+                        <div class="letter-big">Ⲯ</div>
+                        <div class="writing-guide">
+                            <p>Write like the letter 'Ⲯ'</p>
+                        </div>
+                    </div>
+                    <div class="shape-container">
+                        <h3>Small Letter</h3>
+                        <div class="letter-big">ⲯ</div>
+                        <div class="writing-guide">
+                            <p>Write like a small 'ⲯ'</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pronunciation-section">
+                <h3>🗣️ How to Say It</h3>
+                <div class="pronunciation-grid">
+                    <div class="pronunciation-item">
+                        <h4>In English</h4>
+                        <p class="pronunciation-text">"ps as in Pepsi"</p>
+                        <button class="play-sound" onclick="playPronunciation('psi', 'en')">🔊 Listen</button>
+                    </div>
+                    <div class="pronunciation-item">
+                        <h4>In Arabic</h4>
+                        <p class="pronunciation-text">psi</p>
+                        <button class="play-sound" onclick="playPronunciation('psi', 'ar')">🔊 استمع</button>
+                    </div>
+                </div>
+                <div class="phonetic">
+                    <h4>Sound Symbol</h4>
+                    <p class="phonetic-symbol">[ps]</p>
+                </div>
+            </div>
+            
+            <div class="example-section">
+                <h3>📖 Example Word</h3>
+                <div class="example-word">
+                    <img src="Letters and Words/24 - Epsi Photo.png" alt="Psi Example Word" style="max-width: 100%; height: auto; border-radius: 10px; margin-bottom: 15px;">
+                    <button class="play-sound big-play" onclick="playWord('psi')">🔊 Play Word</button>
+                </div>
+            </div>
+            
+            <div class="fun-facts">
+                <h3>🌟 Fun Facts</h3>
+                <div class="fact-cards">
+                    <div class="fact-card">
+                        <h4>📜 Origin</h4>
+                        <p>This letter comes from the <strong>Greek</strong> alphabet!</p>
+                    </div>
+                    <div class="fact-card">
+                        <h4>🔤 Position</h4>
+                        <p>Psi is the <strong>23th letter</strong> of the Coptic alphabet!</p>
+                    </div>
+                    <div class="fact-card">
+                        <h4>🎯 Special Feature</h4>
+                        <p>It looks similar to English letters!</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="practice-section">
+                <h3>✏️ Practice Writing</h3>
+                <div class="practice-area">
+                    <p>Try tracing these letters with your finger!</p>
+                    <div class="trace-letters">
+                        <div class="trace-letter">Ⲯ</div>
+                        <div class="trace-letter">ⲯ</div>
+                        <div class="trace-letter">Ⲯ</div>
+                        <div class="trace-letter">ⲯ</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+        <nav class="letter-navigation">
+            <button class="nav-button prev" onclick="goToPrevLetter()">← Previous Letter</button>
+            <button class="nav-button next" onclick="goToNextLetter()">Next Letter →</button>
+        </nav>
+    </div>
+    
+    <!-- Background Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="background song.mp3" type="audio/mpeg">
+    </audio>
+    
+    <!-- Letter and Word Audio -->
+    <audio id="letterAudioEn" preload="auto">
+        <source src="Letters and Words/24 - Epsi.wav" type="audio/wav">
+    </audio>
+    <audio id="letterAudioAr" preload="auto">
+        <source src="Letters and Words/24 - Epsi Arabic.wav" type="audio/wav">
+    </audio>
+    <audio id="wordAudio" preload="auto">
+        <source src="Letters and Words/24 - Epsi Word.wav" type="audio/wav">
+    </audio>
+    
+    <script src="letter-page.js"></script>
+</body>
+</html>
